@@ -27,13 +27,14 @@
 
         <h1> Right Angle Tool Sample </h1>
         <p class="site-footer">Click on the canvas to begin.</p><button onclick="draw()">Draw</button><br />
-        <canvas id="c" width="1000" height="400" style="border:1px solid black"></canvas>
+        <canvas id="c" width="1000" height="400" style="border:1px solid black;"></canvas>
         <br />
         <script>
+            var canvas = new fabric.Canvas('c');
             function draw() {
                 var vis = 1;
                 //Declare canvas
-                var canvas = new fabric.Canvas('c');
+               
                 //Options
                 var im1 = document.createElement('img');
                 im1.src = "fig001.png";
